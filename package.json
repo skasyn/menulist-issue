@@ -1,0 +1,78 @@
+{
+  "version": "0.1.0",
+  "license": "MIT",
+  "name": "ui",
+  "main": "dist/index.js",
+  "typings": "dist/index.d.ts",
+  "files": [
+    "dist",
+    "src"
+  ],
+  "engines": {
+    "node": ">=10"
+  },
+  "scripts": {
+    "start": "tsdx watch",
+    "build": "tsdx build",
+    "test": "tsdx test --passWithNoTests",
+    "lint": "tsdx lint",
+    "prepare": "tsdx build",
+    "size": "size-limit",
+    "analyze": "size-limit --why"
+  },
+  "peerDependencies": {
+    "react": ">=17"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "tsdx lint"
+    }
+  },
+  "prettier": {
+    "printWidth": 80,
+    "semi": true,
+    "singleQuote": true,
+    "trailingComma": "es5"
+  },
+  "author": "Antoine FP",
+  "module": "dist/ui.esm.js",
+  "size-limit": [
+    {
+      "path": "dist/ui.cjs.production.min.js",
+      "limit": "10 KB"
+    },
+    {
+      "path": "dist/ui.esm.js",
+      "limit": "10 KB"
+    }
+  ],
+  "devDependencies": {
+    "@size-limit/preset-small-lib": "^4.11.0",
+    "@types/react": "^17.0.9",
+    "@types/react-dom": "^17.0.6",
+    "husky": "^6.0.0",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "size-limit": "^4.11.0",
+    "tsdx": "^0.14.1",
+    "tslib": "^2.2.0",
+    "typescript": "~4.2.0"
+  },
+  "dependencies": {
+    "@emotion/babel-preset-css-prop": "^11.2.0",
+    "@emotion/react": "^11.4.0",
+    "@emotion/styled": "^11.3.0",
+    "@fortawesome/fontawesome-svg-core": "^1.2.35",
+    "@fortawesome/free-brands-svg-icons": "^5.15.3",
+    "@fortawesome/free-solid-svg-icons": "^5.15.3",
+    "@fortawesome/react-fontawesome": "^0.1.14",
+    "@reach/alert-dialog": "^0.15.0",
+    "@reach/dialog": "^0.15.0",
+    "@reach/menu-button": "^0.15.1",
+    "@reach/popover": "^0.15.0",
+    "@reach/tabs": "^0.15.0",
+    "@reach/tooltip": "^0.15.0",
+    "debounce-fn": "^5.0.0",
+    "react-switch": "^6.0.0"
+  }
+}

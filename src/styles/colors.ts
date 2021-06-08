@@ -1,0 +1,15 @@
+export const earthGray = "#dcd9f5";
+export const marsGray = "#bab7dc";
+export const mercureGray = "#F6F5FF";
+export const jupiterGray = "#8d8aab";
+export const persianBlue = "#3023ad";
+export const darkBlue = "#0e1554";
+export const venusGray = "#e9e7fa";
+export const saturnGray = "#535166";
+export const redDanger = "#EE3052";
+export const redPale = "#eb5757";
+export const greenSpring = "#00f5a6";
+export const greenSalem = "#0e7c58";
+export const violetRed = "#FD4994";
+export const yellowHimalaya = "#786523";
+export const yellowButtermilk = "#ffedad";
